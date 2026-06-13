@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 520" role="img" aria-labelledby="title">
+  <title id="title">World map placeholder</title>
+  <defs>
+    <linearGradient id="mapFill" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0B5ED7" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#14B8A6" stop-opacity="0.18"/>
+    </linearGradient>
+    <filter id="soft" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+  <rect width="980" height="520" fill="none"/>
+  <g fill="url(#mapFill)" filter="url(#soft)">
+    <path d="M93 164c31-43 105-68 151-45 28 14 16 43 55 55 33 10 75-5 97 24 19 24-7 63-42 69-41 7-70-26-108-17-30 7-46 36-83 29-42-8-63-45-76-78-5-13-4-25 6-37z"/>
+    <path d="M356 119c39-19 97-16 139 7 34 19 34 50 72 60 48 13 73-29 111-5 39 24 25 78-13 100-30 17-61 5-88 23-32 22-20 64-57 82-40 19-94-2-112-39-16-33 8-55-13-82-24-31-74-18-91-54-15-32 15-74 52-92z"/>
+    <path d="M685 234c38-20 102-13 143 17 48 35 60 94 29 131-35 41-116 50-157 13-27-24-18-53-48-72-29-19-74-13-84-39-9-24 54-18 117-50z"/>
+    <path d="M275 329c35-8 70 12 83 43 15 36-12 77-49 84-42 8-83-24-80-61 2-31 20-60 46-66z"/>
+    <path d="M585 96c51-25 135-19 182 19 24 20 29 46 13 62-19 19-59 10-87 25-30 17-26 51-59 60-36 10-84-18-91-53-8-40 9-96 42-113z"/>
+  </g>
+  <g fill="none" stroke="#0B5ED7" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 16" opacity="0.42">
+    <path d="M188 210C300 128 420 140 533 221"/>
+    <path d="M540 222c82 58 179 71 288 30"/>
+    <path d="M296 378c130-80 274-76 432 8"/>
+  </g>
+  <g fill="#14B8A6" opacity="0.6">
+    <circle cx="188" cy="210" r="8"/>
+    <circle cx="533" cy="221" r="8"/>
+    <circle cx="828" cy="252" r="8"/>
+    <circle cx="296" cy="378" r="8"/>
+    <circle cx="728" cy="386" r="8"/>
+  </g>
+</svg>

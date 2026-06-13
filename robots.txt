@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://globalmedico.in/sitemap.xml
