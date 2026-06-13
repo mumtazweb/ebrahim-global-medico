@@ -2169,43 +2169,42 @@ textarea:focus {
 .hero-visual::before {
     content: "" !important;
     position: absolute !important;
-    width: 88% !important;
+    width: 92% !important;
     height: 96% !important;
-    right: -8% !important;
+    right: -12% !important;
     top: 0 !important;
     bottom: auto !important;
     border-radius: 58% 0 0 58% !important;
     background:
-        linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(238, 247, 255, 0.72)),
-        radial-gradient(circle at 78% 20%, rgba(20, 184, 166, 0.22), transparent 38%),
-        radial-gradient(circle at 28% 70%, rgba(11, 94, 215, 0.16), transparent 42%) !important;
+        linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(238, 247, 255, 0.74)),
+        radial-gradient(circle at 72% 30%, rgba(20, 184, 166, 0.14), transparent 42%),
+        radial-gradient(circle at 28% 78%, rgba(11, 94, 215, 0.12), transparent 44%) !important;
     box-shadow:
-        -10px 0 26px rgba(6, 29, 63, 0.08),
-        inset 12px 0 22px rgba(255, 255, 255, 0.7) !important;
-    z-index: -2 !important;
+        -12px 0 26px rgba(255, 255, 255, 0.88),
+        -6px 0 18px rgba(6, 29, 63, 0.06) !important;
+    z-index: 0 !important;
 }
 
 .hero-visual::after {
     content: "" !important;
     position: absolute !important;
-    width: 34% !important;
-    height: 96% !important;
-    left: -6% !important;
+    width: 28% !important;
+    height: 94% !important;
+    left: 24% !important;
     top: 0 !important;
     bottom: auto !important;
     border-radius: 100% 0 0 100% !important;
     background: linear-gradient(
         180deg,
-        rgba(0, 155, 142, 0.32),
-        rgba(11, 94, 215, 0.22),
-        rgba(238, 247, 255, 0.05)
+        rgba(0, 155, 142, 0.20),
+        rgba(11, 94, 215, 0.13),
+        rgba(255, 255, 255, 0.18)
     ) !important;
     box-shadow:
-        -8px 0 18px rgba(0, 155, 142, 0.12),
-        inset -10px 0 16px rgba(255, 255, 255, 0.5) !important;
-    z-index: -1 !important;
+        -10px 0 22px rgba(255, 255, 255, 0.82),
+        inset -8px 0 18px rgba(255, 255, 255, 0.55) !important;
+    z-index: 1 !important;
 }
-
 .hero-doctor {
     width: min(96%, 600px);
     height: min(95%, 590px);
