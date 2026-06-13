@@ -1670,12 +1670,83 @@ textarea:focus {
 .top-counselling-btn {
     justify-self: center;
     min-height: 30px;
-    padding: 7px 16px;
+    padding: 6px 14px 6px 19px;
     border-radius: 999px;
-    background: var(--medical-green);
+    background: transparent;
     color: var(--white);
     font-weight: 800;
-    box-shadow: 0 8px 18px rgba(0, 155, 142, 0.22);
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+    line-height: 1;
+}
+
+.top-counselling-btn .free-tag {
+    position: absolute;
+    left: 0;
+    inset-block: 0;
+    width: 14px;
+    display: grid;
+    place-items: center;
+    background: var(--gold-accent);
+    color: var(--dark-navy);
+    font-size: 0.48rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.top-contact-right {
+    justify-content: flex-end;
+}
+
+.top-contact-right .social-link {
+    width: 24px;
+    height: 24px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 0;
+    background: transparent;
+    line-height: 1;
+}
+
+.top-contact-right .social-link i {
+    font-size: 0.95rem;
+}
+
+.top-contact-right .social-email i {
+    color: var(--gold-accent);
+}
+
+.top-contact-right .social-facebook i {
+    color: #1877F2;
+}
+
+.top-contact-right .social-youtube i {
+    color: #FF0000;
+}
+
+.top-contact-right .social-instagram i {
+    color: #E4405F;
+}
+
+.top-contact-right .social-instagram i::before {
+    background:
+        radial-gradient(circle at 30% 105%, #FEDA75 0 18%, #FA7E1E 34%, #D62976 55%, #962FBF 76%, #4F5BD5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.top-contact-right .social-x i {
+    color: #FFFFFF;
+}
+
+.top-contact-right .social-telegram i {
+    color: #26A5E4;
 }
 
 .brand-logo {
@@ -2319,12 +2390,12 @@ br.hero-mobile-break,
 @media (max-width: 719px) {
     .top-contact-inner {
         width: min(100% - 14px, 1180px);
-        min-height: 36px;
+        min-height: 34px;
         display: grid;
-        grid-template-columns: max-content max-content max-content;
+        grid-template-columns: minmax(0, auto) auto max-content;
         align-items: center;
         justify-content: space-between;
-        gap: 6px;
+        gap: 5px;
         padding: 4px 0;
         overflow: visible;
     }
@@ -2335,10 +2406,9 @@ br.hero-mobile-break,
         gap: 0;
     }
 
-    .contact-menu-button,
-    .top-contact-right a {
-        gap: 4px;
-        font-size: 0.67rem;
+    .contact-menu-button {
+        gap: clamp(3px, 1vw, 5px);
+        font-size: clamp(0.5rem, 2.25vw, 0.68rem);
         line-height: 1;
     }
 
@@ -2347,22 +2417,27 @@ br.hero-mobile-break,
     }
 
     .dual-contact-icon {
-        width: 24px;
-        height: 19px;
+        width: clamp(20px, 6vw, 24px);
+        height: clamp(17px, 5vw, 19px);
     }
 
     .dual-contact-icon i {
-        width: 17px;
-        height: 17px;
-        font-size: 0.56rem;
+        width: clamp(15px, 4.5vw, 17px);
+        height: clamp(15px, 4.5vw, 17px);
+        font-size: clamp(0.5rem, 1.7vw, 0.56rem);
     }
 
     .top-counselling-btn {
         min-height: 26px;
-        padding: 6px 8px;
-        font-size: 0.66rem;
+        padding: 6px clamp(6px, 2vw, 9px) 6px 17px;
+        font-size: clamp(0.52rem, 2.3vw, 0.68rem);
         line-height: 1;
         box-shadow: none;
+    }
+
+    .top-counselling-btn .free-tag {
+        width: 13px;
+        font-size: 0.42rem;
     }
 
     .top-contact-bar .email-full {
@@ -2370,7 +2445,8 @@ br.hero-mobile-break,
     }
 
     .top-contact-bar .contact-number {
-        display: none;
+        display: inline-flex;
+        font-size: clamp(0.5rem, 2.25vw, 0.68rem);
     }
 
     .top-contact-bar .email-short {
@@ -2378,7 +2454,23 @@ br.hero-mobile-break,
     }
 
     .top-contact-bar .contact-short {
+        display: none;
+    }
+
+    .top-contact-right {
         display: inline-flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: clamp(1.5px, 0.75vw, 4px);
+    }
+
+    .top-contact-right .social-link {
+        width: clamp(15px, 4.8vw, 21px);
+        height: clamp(15px, 4.8vw, 21px);
+    }
+
+    .top-contact-right .social-link i {
+        font-size: clamp(0.66rem, 2.75vw, 0.88rem);
     }
 
     .nav-inner {
@@ -2644,17 +2736,34 @@ br.hero-mobile-break,
 @media (max-width: 380px) {
     .top-contact-inner {
         width: min(100% - 12px, 1180px);
-        gap: 4px;
+        gap: 3px;
     }
 
     .contact-menu-button,
-    .top-contact-right a,
     .top-counselling-btn {
-        font-size: 0.62rem;
+        font-size: clamp(0.48rem, 2.1vw, 0.62rem);
     }
 
     .top-counselling-btn {
-        padding-inline: 6px;
+        padding: 6px 5px 6px 15px;
+    }
+
+    .top-counselling-btn .free-tag {
+        width: 12px;
+        font-size: 0.37rem;
+    }
+
+    .top-contact-right {
+        gap: 1.5px;
+    }
+
+    .top-contact-right .social-link {
+        width: clamp(14px, 4.6vw, 17px);
+        height: clamp(14px, 4.6vw, 17px);
+    }
+
+    .top-contact-right .social-link i {
+        font-size: clamp(0.6rem, 2.6vw, 0.78rem);
     }
 
     .brand {
